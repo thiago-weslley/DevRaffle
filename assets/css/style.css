@@ -36,6 +36,7 @@ main section {
     margin-top: 8.0rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 main section p {
@@ -47,7 +48,7 @@ main section div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 2.5rem;
+    margin-top: 3.0rem;
     gap: 1.5rem;
 }
 
@@ -68,7 +69,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 main section .raffle-button {
-    margin-top: 5.0rem;
+    margin-top: 4.0rem;
     width: 20.0rem;
     height: 3.5rem;
     background-color: #AEC346;
@@ -77,8 +78,38 @@ main section .raffle-button {
     border: none;
     text-transform: uppercase;
     cursor: pointer;
+    margin-bottom: 4.0rem;
 }
 
 main section .raffle-button:active {
     background-color: #aec346af;
+}
+
+@media screen and (min-width: 25em) {
+    main img {
+        margin-top: 12.0rem;
+        width: 38.0rem;
+    }
+
+    main section div .input-number {
+        width: 30.0rem;
+        height: 4.5rem;
+    }
+
+    main section .raffle-button {
+        width: 30.0rem;
+        height: 4.5rem;
+    }
+}
+
+@media screen and (min-width: 50em) {
+    main img {
+        width: 42.0rem;
+    }
+
+    main section div {
+        flex-direction: row;
+        margin-top: 3.0rem;
+        gap: 2.5rem;
+    }
 }
