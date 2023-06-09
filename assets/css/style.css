@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 :root {
     font-size: 62.5%;
 }
@@ -17,6 +18,7 @@ body {
     height: 100vh;
     font-size: 1.6rem;
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 main {
@@ -32,8 +34,20 @@ main img {
     width: 25.0rem;
 }
 
+main .drawn-number-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5.0rem;
+    width: 10.0rem;
+    height: 7.0rem;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
+    font-size: 2.4rem;
+}
+
 main section {
-    margin-top: 8.0rem;
+    margin-top: 4.0rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -113,3 +127,4 @@ main section .raffle-button:active {
         gap: 2.5rem;
     }
 }
+  
