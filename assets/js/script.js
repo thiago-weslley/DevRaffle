@@ -9,6 +9,12 @@ const generateNumber = () => {
     const randomNumber = Math.floor(Math.random() * range) + min;
 
     drawnNumber.innerHTML = randomNumber;
+
+    drawnNumber.classList.add('animate');
+
+    setTimeout(() => {
+        drawnNumber.classList.remove('animate');
+    }, 640);
 }
 
 raffleButton.addEventListener('click', generateNumber);
