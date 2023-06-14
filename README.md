@@ -1,4 +1,4 @@
-# DevSorteio
+# DevRaffle
 <br>
 
 <p align="center">
